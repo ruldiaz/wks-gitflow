@@ -30,7 +30,7 @@ const columns = [
     render: (residents: string[]) => residents.length,
   },
 ];
-//sfgbdfxdvfg
+
 const Planets = () => {
   const { data, error } = useSWR('/planets', swGet);
 
@@ -40,12 +40,14 @@ const Planets = () => {
   if (!data) {
     return <div className="px-2">Loading...</div>;
   }
-//cambio
+
   return (
     <div>
-      <Table columns={columns} data={data.results} /* :D f */ />
+      <Table columns={columns} data={data.results} /* :D */ />
     </div>
   );
 };
+
+
 
 export default Planets;
