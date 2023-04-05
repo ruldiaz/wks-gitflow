@@ -30,7 +30,7 @@ const columns = [
     render: (residents: string[]) => residents.length,
   },
 ];
-
+//sfgbdfxdvfg
 const Planets = () => {
   const { data, error } = useSWR('/planets', swGet);
 
