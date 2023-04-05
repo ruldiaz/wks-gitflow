@@ -40,10 +40,14 @@ const Planets = () => {
   if (!data) {
     return <div className="px-2">Loading...</div>;
   }
-
+//cambio
   return (
     <div>
+<<<<<<< HEAD
       <Table columns={columns} data={data.results} /* :D */ />
+=======
+      <Table columns={columns} data={data.results} /* :D f */ />
+>>>>>>> 81a6ea6fb1e6cf010b4fcc06c41ff48052428afe
     </div>
   );
 };
